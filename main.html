@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <!-- Initial paragraph -->
+  <p id="status">Enter the Metaverse</p>
 
+  <!-- Enter button -->
+  <button id="enterBtn">Enter</button>
+
+  <!-- Script to handle the click -->
+  <script type="text/javascript" src="./script.js">
+	  document.getElementById("enterBtn").addEventListener("click", function () {
+  // Replace paragraph with h1 and updated text
+  document.getElementById("status").outerHTML = '<h1 id="status">Entered Metaverse</h1>';
+});
+
+  </script>
 </body>
 
 </html>
